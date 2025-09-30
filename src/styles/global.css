@@ -16,6 +16,10 @@
 		@apply font-medium text-7xl font-[Yeseva_One] leading-normal;
 	}
 
+	h3 {
+		@apply font-medium text-2xl;
+	}
+
 	p,
 	li {
 		@apply mb-3 leading-relaxed;
@@ -24,7 +28,7 @@
 
 @layer components {
 	.button {
-		@apply inline-block rounded-full pt-2 pb-3 px-8 text-center;
+		@apply inline-block rounded-full pt-2 pb-3 px-8 text-center font-semibold;
 
 		&.button--primary {
 			@apply bg-black text-white;
