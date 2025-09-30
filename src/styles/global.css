@@ -1,1 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap");
 @import "tailwindcss";
+
+@theme {
+	--color-lightgreen: #ebffe0;
+	--color-lightblue: #ccfffe;
+}
+
+@layer base {
+	html {
+		@apply font-[Plus_Jakarta_Sans] scroll-smooth;
+	}
+
+	h1 {
+		@apply font-medium text-7xl font-[Yeseva_One] leading-normal;
+	}
+
+	p,
+	li {
+		@apply mb-3 leading-relaxed;
+	}
+}
+
+@layer components {
+	.button {
+		@apply inline-block rounded-full pt-2 pb-3 px-8 text-center;
+
+		&.button--primary {
+			@apply bg-black text-white;
+		}
+
+		&.button--secondary {
+			@apply bg-white;
+		}
+	}
+}
